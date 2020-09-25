@@ -1,21 +1,17 @@
-// console.log('привет');
-// alert(1);
-// let que = prompt("ты лох?","");
-
-// console.log(que);
-/* for( let i = 1; i < 10; i++)
-{
-    console.log(i);
-} */
-// const num = 99;
-// if(num < 70){
-//     console.log('ну мало,епта')
-// } else if(num>100) {
-//     console.log('вот ты гигант')
-// } else {
-//     console.log('падёт')
-// }
-function calc (a,b) {
-    console.log(a + b);
-}
-calc(43,123);
+$(document).ready(function(){
+    $('.carousel__inner').slick({
+        speed: 1200,
+        /* adaptiveHeight: true, */
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                dots: true,
+                arrows: false
+              }
+            }
+        ]
+    });
+  });
